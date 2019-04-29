@@ -8,9 +8,14 @@ import {
 
 export default class HomePage extends Component {
 
+  static navigationOptions = {
+    title: 'home',
+    headerBackTitle: '返回',
+  }
 
   render() {
     const {navigation} = this.props;
+
 
     return <View>
       <Text>欢迎来到HomePage</Text>
@@ -27,6 +32,18 @@ export default class HomePage extends Component {
         navigation.navigate('Page3', {name: 'LE XIAO DI'});
       }
       }/>
+
+      <Button title={'Top'} onPress={() => {
+        navigation.navigate('Top')
+      }}/>
+
+      <Button title={'Bottom'} onPress={() => {
+        navigation.navigate('Bottom')
+      }}/>
+      
+      <Button title={'抽屉'} onPress={() => {
+        navigation.navigate('DrawerNav')
+      }}/>
 
 
     </View>

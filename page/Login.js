@@ -3,7 +3,7 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View, Image
+  View, Image, Button
 } from 'react-native';
 
 
@@ -20,47 +20,11 @@ export default class Login extends Component {
 
 
   render() {
-    return <View
-      style={{
-        borderWidth: 2, cyan: '',
-        alignItems: 'flex-end',
-        justifyContent: 'flex-start',
-        flexWrap: 'wrap',
-        flexDirection: 'row',
-        backgroundColor: "darkgray",
-        marginTop: 20
-      }}>
-      <Text>PAGE1</Text>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>page1</Text>
-      </View>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>2</Text>
-      </View>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>3</Text>
-      </View>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>4</Text>
-      </View>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>5</Text>
-      </View>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>6</Text>
-      </View>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>7</Text>
-      </View>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>8</Text>
-      </View>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>9</Text>
-      </View>
-      <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>10</Text>
-      </View>
+    return <View>
+      <Text>Button</Text>
+      <Button title={'login'} onPress={() => {
+        this.props.navigation.navigate('App')
+      }}/>
 
     </View>
   }
