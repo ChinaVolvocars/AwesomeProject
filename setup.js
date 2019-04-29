@@ -16,6 +16,8 @@ import LifecycleComponent from './LifecycleComponent';
 import Animal from './Animal';
 import Cat from './Cat';
 
+import LayoutTest from './LayoutTest';
+
 
 // import ExportComponent, {name, age, sum} from './ExportComponent'
 
@@ -46,26 +48,26 @@ export default class setup extends Component<Props> {
 
     let {name, sex} = params;
     return (
-      <View style={styles.container}>
-        {/*<Text onPress={() => {*/}
-        {/*  this.setState({*/}
-        {/*      remove: !this.state.remove*/}
-        {/*    }*/}
-        {/*  )*/}
-        {/*}}>{s}</Text>*/}
-        {/*/!*<HelloComponent/>*!/*/}
-        {/*{whetherToLoadLifecycleComponent}*/}
+      // style={styles.container}
+      <View>
+        {/* <Text onPress={() => {
+          this.setState({
+              remove: !this.state.remove
+            }
+          )
+        }}>{s}</Text>
+        <HelloComponent/>
+        {whetherToLoadLifecycleComponent}
 
-        {/*<Text style={{fontSize: 20}}>姓名：{name},年龄：{age},求和：1 + 2 = {sum(1, 2)}</Text>*/}
+        <Text style={{fontSize: 20}}>姓名：{name},年龄：{age},求和：1 + 2 = {sum(1, 2)}</Text>
 
         <PropsTest
           // name='XT'
           // sex='女'
           {...params}
-
-
         />
-        {/*<PropsTest/>*/}
+        <PropsTest/>
+
 
         <StateTest/>
 
@@ -81,7 +83,11 @@ export default class setup extends Component<Props> {
 
 
         <Text>{this.animal.getDes()}</Text>
-        <Text>{this.cat.getDes()}</Text>
+        <Text>{this.cat.getDes()}</Text>*/}
+
+
+        <LayoutTest/>
+
 
       </View>
     );
