@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 
-export default class StateTest extends Component {
+export default class Login extends Component {
 
   constructor(props) {
     super(props);
@@ -30,8 +30,9 @@ export default class StateTest extends Component {
         backgroundColor: "darkgray",
         marginTop: 20
       }}>
+      <Text>PAGE1</Text>
       <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
-        <Text style={{fontSize: 16}}>1</Text>
+        <Text style={{fontSize: 16}}>page1</Text>
       </View>
       <View style={{width: 40, height: 40, backgroundColor: "darkcyan", margin: 5}}>
         <Text style={{fontSize: 16}}>2</Text>
